@@ -10,7 +10,7 @@
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -p tsconfig.json  -w --preserveWatchOutput",
     "dev": "NODE_ENV=development node build/app.js",
-    "start": "NODE_ENV=live node build/app.js"
+    "start": "(NODE_ENV=live node build/app.js > app.log &)"
   },
   "dependencies": {
     "koa": "^2.12.0"
