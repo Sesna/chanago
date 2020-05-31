@@ -1,0 +1,22 @@
+{
+  "name": "chanago",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "repository": "git@github.com:Sesna/chanago.git",
+  "author": "sesnala@163.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json  -w --preserveWatchOutput",
+    "dev": "NODE_ENV=development node build/app.js",
+    "start": "NODE_ENV=live node build/app.js"
+  },
+  "dependencies": {
+    "koa": "^2.12.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "typescript": "^3.9.3"
+  }
+}
