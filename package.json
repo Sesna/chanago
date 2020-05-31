@@ -1,19 +1,12 @@
 {
+  "private": true,
   "name": "chanago",
-  "version": "1.0.0",
-  "description": "my website",
-  "main": "index.js",
-  "repository": "git@github.com:Sesna/chanago.git",
-  "author": "sesnala@163.com",
-  "license": "MIT",
+  "workspaces": [
+    "be",
+    "fe"
+  ],
   "scripts": {
-    "dev": "NODE_ENV=development node src/app.js",
-    "start": "(NODE_ENV=live node src/app.js > app.log &)"
-  },
-  "dependencies": {
-    "koa": "^2.12.0",
-    "koa-favicon": "^2.1.0",
-    "koa-static": "^5.0.0"
-  },
-  "devDependencies": {}
+    "dev": "NODE_ENV=development node be/src/app.js",
+    "start": "(NODE_ENV=live node be/src/app.js > app.log &)"
+  }
 }

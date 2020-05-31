@@ -3,7 +3,8 @@ const KoaStatic = require('koa-static');
 const favicon = require('koa-favicon');
 const app = new Koa();
 
-app.use(favicon(__dirname + '/../public/favicon.ico'));
-app.use(KoaStatic('./public'));
+const fePublic = `${__dirname}/../../fe/public`;
+app.use(favicon(`${fePublic}/favicon.ico`));
+app.use(KoaStatic(fePublic));
 
 app.listen(5800);
