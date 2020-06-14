@@ -7,6 +7,6 @@
   ],
   "scripts": {
     "dev": "NODE_ENV=development node be/src/app.js",
-    "start": "(NODE_ENV=live node be/src/app.js > app.log &)"
+    "start": "(NODE_ENV=prod node be/src/app.js > app.log &)"
   }
 }

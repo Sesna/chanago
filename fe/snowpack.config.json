@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "mount:public": "mount public --to /",
+    "mount:js": "mount src/js --to /js",
+    "proxy:home": "proxy http://localhost:5800 --to /index.html",
+    "run:sass": "sass src/css:public/css --no-source-map",
+    "run:sass::watch": "$1 --watch"
+  },
+  "devOptions": {
+    "open": "none"
+  },
+  "plugins": [
+    "@snowpack/plugin-webpack"
+  ]
+}

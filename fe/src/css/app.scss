@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 14px;
+}
+.w {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.head {
+  .w {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    line-height: 65px;
+  }
+  .logo {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, .8);
+  }
+  .me {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+}
